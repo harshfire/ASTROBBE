@@ -32,5 +32,6 @@ jobs:
       - run:
           name: Build Step
           command: |
+            ls
             git submodule update --init --depth 1 description/media
             ./scripts/docker/build.sh --bionic --remote astrobee test_astrobee
