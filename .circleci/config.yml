@@ -20,7 +20,6 @@ jobs:
           command: |-
             ls
             pwd
-            cd ASTROBBE
             ./scripts/docker/build.sh --bionic --remote astrobee test_astrobee
 
 # Invoke jobs via workflows
