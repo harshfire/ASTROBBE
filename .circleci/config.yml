@@ -17,7 +17,11 @@ jobs:
 
       - run:
           name: "Say hello"
-          command: ./scripts/docker/build.sh --bionic --remote astrobee test_astrobee
+          command: |-
+            ls
+            pwd
+            cd ASTROBBE
+            ./scripts/docker/build.sh --bionic --remote astrobee test_astrobee
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
