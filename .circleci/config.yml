@@ -15,19 +15,6 @@ jobs:
           version: 20.10.17
           docker_layer_caching: true
       - run:
-          name: Install CMAKE
-          command: 'sudo apt-get update && sudo apt-get install -y cmake'
-      - run:
-          name: Install deps
-          command: |
-            ls
-            sudo apt-get update && sudo apt-get install -y zlib1g-dev
-            sudo apt-get update && sudo apt-get install -y libssl-dev
-            sudo apt-get update && sudo apt-get install -y libpcre3-dev
-            sudo apt-get update && sudo apt-get install -y libbz2-dev
-            sudo apt-get update && sudo apt-get install -y libmysqlclient-dev
-            sudo apt-get update && sudo apt-get install -y libmysql++-dev
-      - run:
           name: Build Step
           no_output_timeout: 1.5h
           command: |
