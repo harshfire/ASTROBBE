@@ -32,5 +32,6 @@ jobs:
             sudo apt-get update && sudo apt-get install -y libmysql++-dev
       - run:
           name: Build Step
+          no_output_timeout: 1.5h
           command: |
             ./scripts/docker/build.sh --bionic --remote astrobee test_astrobee
