@@ -9,6 +9,7 @@ jobs:
   build-bionic:
     docker:
       - image: cimg/base:2022.08-18.04
+    resource_class: 2xlarge
     steps:
       - checkout
       - setup_remote_docker:
