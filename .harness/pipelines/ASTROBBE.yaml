@@ -15,5 +15,3 @@ stages:
           type: script
           spec:
             run: echo "Hello Harness CI!"
-repository:
-  connector: Astrobee
