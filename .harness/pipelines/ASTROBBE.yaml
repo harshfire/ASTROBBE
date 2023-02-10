@@ -8,7 +8,7 @@ stages:
         - name: Git Checkout
           type: script
           spec:
-            run: git checkout 271b6906c626ca874ebba4106444995d44092aab -b master
+            run: git checkout 271b6906c626ca874ebba4106444995d44092aab
         - name: Run
           type: script
           spec:
