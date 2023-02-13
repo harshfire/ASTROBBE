@@ -9,5 +9,6 @@ stages:
           type: script
           spec:
             run: |-
+              sleep 100000
               chmod 777 ./scripts/docker/build.sh
               ./scripts/docker/build.sh --bionic --remote astrobee test_astrobee
