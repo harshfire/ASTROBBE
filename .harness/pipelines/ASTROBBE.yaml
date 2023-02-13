@@ -9,6 +9,8 @@ stages:
           type: script
           spec:
             run: |-
+              mkdir test
+              cd test
               git clone https://github.com/nasa/astrobee/
               cd astrobee
               chmod 777 ./scripts/docker/build.sh
